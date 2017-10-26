@@ -8,23 +8,23 @@ El proyecto Bandtouch será una aplicación en la cual los usuarios podrán nave
 •	El usuario luego de haber ingresado las credenciales requeridas, descubrirá el View de bienvenida.
 •	Asimismo el usuario podrá ingresar a la vista en donde se estará mostrarán la lista de géneros, los cuales podrán ser seleccionados por el usuario 
 •	Dependiendo de la selección que realice el usuario se revelara una vista con las bandas que están asociadas al genero escogido.
-•	El usuario contará con la posibilidad de seleccionar cualquier banda, direccionándolo a una nueva vista, en la cual se mostrara una breve reseña sobre el artista seleccionado. 
+•	El usuario contará con la posibilidad de seleccionar cualquier banda, direccionándolo a una nueva vista, en la cual se mostrara El nombre de cada banda, junto con la imagen respectiva, además tendra una breve reseña sobre el artista, adicionalmente cada banda contara con botones de sus correspondientes redes sociales y por ultimo se podra ver un video de cada banda. ESPECIFICAR EXACTAMENTE LA VISTA DE LA BANDA.
 •	Estando en ese punto de la aplicación, el usuario contará con la posibilidad de realizar una reserva por banda seleccionando la fecha deseada.
-•	La aplicación tendrá dos tipos de usuarios Administrador el cual será el único que podrá modificar, editar y agregar (bandas, generos y/o comentarios acerca de la aplicación) a la aplicación y usuario final, este ultimo siendo el cliente que podrá navegar por la 
+•	La aplicación tendrá dos tipos de usuarios Administrador el cual será el único que podrá modificar, editar y agregar bandas, generos y/o comentarios acerca de la aplicación, por medio de vistas que solamente podrá visualizar el administrador.
+•   Vistas de admin especificar 
+
+• El usuario final, unicamente tendra autorización para navegar por la aplicación sin capacidad de modificar, editar o eliminar bandas o generos. 
 •	El administrador podrá ver la vista de Bienvenida, la cuál contara con un mensaje de bienvenida a la pagina y con el listado de generos. 
-•	El administrador podrá ver las mismas vistas de los usuarios finales con la diferencia que seria el único que podría crear, editar, actualizar y eliminar el contenido de la aplicación.
-•	En todos los view se evidenciaran botones "back", que regresará al usuario a la vista anterior.
 •	También se contará con una botón "home", que llevará al usuario al view principal de la aplicación.
 •	Los usuarios podran hacer "logout" en cualquier interfaz del aplicativo.
-•	El usuario puede generar un comentario en el view de las bandas y además un comentario acerca de la aplicación en otra vista diferente (agregaran los comentarios acerca de la pagina también acerca de las bandas. (redes sociales))
-•	Se agregara un buscador de bandas o géneros, en el home de la aplicación
-•	Otra parte importante que se integrara a la aplicación es poder conectar a las personas con las redes sociales de cada banda.
-•	Se creara el rate o la calificación por bandas. 
-•	En el view de cada banda, podrá evidenciarse un preview de una canción de cada banda.
-•	El sistema permitirá que el se pueda filtrar las bandas por un rango de precios. 
-•	EL administrador creara la funcionalidad de “me gusta” para cada banda, por medio del cual el usuario podrá darle más popularidad a dicha banda.  
-•	EL usuario podrá crear su perfil en el cual se evidenciara la información del mismo, además podrá ver las reservas que ha generado.
-•	Agregar una nueva sección en la cual el usuario podrá ver los lugares en los cuales se pueden presentar bandas o eventos en los que las mismas estén presentes. News. 
+•	El usuario puede generar un comentario en el view de las bandas 
+•   Además un comentario acerca de la aplicación en otra vista diferente.
+•	Se agregara un buscador por nombre de bandas o por géneros, en el vista home de la aplicación.
+•	El usuario podra calificar de 1-5 el rate o la calificación por bandas en el view de las bandas. 
+•	El sistema permitirá filtrar las bandas por su rango de precios. 
+•	EL usuario podrá crear su perfil con información como nombre, foto, y una breve descripción además.  
+•   Además podrá ver las reservas que ha generado en su perfil. 
+(•	Agregar una nueva sección en la cual el usuario podrá ver los lugares en los cuales se pueden presentar bandas o eventos en los que las mismas estén presentes. News.) 
 •	Mejora de la interfaz de la aplicación (diseño).
 
 
