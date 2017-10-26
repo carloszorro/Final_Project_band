@@ -10,8 +10,8 @@ El proyecto Bandtouch será una aplicación en la cual los usuarios podrán nave
 •	Dependiendo de la selección que realice el usuario se revelara una vista con las bandas que están asociadas al genero escogido.
 •	El usuario contará con la posibilidad de seleccionar cualquier banda, direccionándolo a una nueva vista, en la cual se mostrara una breve reseña sobre el artista seleccionado. 
 •	Estando en ese punto de la aplicación, el usuario contará con la posibilidad de realizar una reserva por banda seleccionando la fecha deseada.
-•	La aplicación tendrá dos tipos de usuarios Administrador el cual será el único que podrá modificar, editar y agregar objetos a la aplicación y usuario final, este ultimo siendo el cliente que podrá navegar por la 
-•	El administrador podrá ver la vista de Bienvenida 
+•	La aplicación tendrá dos tipos de usuarios Administrador el cual será el único que podrá modificar, editar y agregar (bandas, generos y/o comentarios acerca de la aplicación) a la aplicación y usuario final, este ultimo siendo el cliente que podrá navegar por la 
+•	El administrador podrá ver la vista de Bienvenida, la cuál contara con un mensaje de bienvenida a la pagina y con el listado de generos. 
 •	El administrador podrá ver las mismas vistas de los usuarios finales con la diferencia que seria el único que podría crear, editar, actualizar y eliminar el contenido de la aplicación.
 •	En todos los view se evidenciaran botones "back", que regresará al usuario a la vista anterior.
 •	También se contará con una botón "home", que llevará al usuario al view principal de la aplicación.
