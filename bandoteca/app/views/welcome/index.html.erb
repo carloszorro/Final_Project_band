@@ -1,0 +1,20 @@
+<h1>Welcome</h1>
+
+<% @genres.each do |genre| %>
+
+<div class="welcome_genre">
+    <img class="img-responsive img-circle img-thumbnail" width="200" height="200"
+    src="<%= genre.image_url_genre %>"
+    alt="Rock"><br>
+
+    <%= link_to genre.name_genre, genre_path(genre),
+    class:"genre btn-xs btn btn-primary col-md-offset-4" %> <br>
+
+<div class="col-xs-12">
+
+</div>
+<% end %>
+
+<% if current_user.admin %>
+<%= link_to 'genres', new_genre_path, class:"admin btn btn-info" %>
+<% end %>

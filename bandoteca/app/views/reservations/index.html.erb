@@ -1,0 +1,24 @@
+<h1>Reservations</h1>
+
+<% @reservations.each do |reservation| %>
+
+<ol class="info_band">
+    <li>
+      <strong> <%= reservation.date %> </strong>
+    </li>
+    <li>
+      <em> <%= reservation.band.name %> </em>
+    </li>
+    <li>
+      <em> <%= reservation.user.email %> </em>
+    </li>
+  </ul>
+</ol>
+
+</div>
+
+<% if current_user.admin %>
+  <%= link_to 'delete', reservation_path(reservation), method: :delete,
+      class:"delete btn btn-info" %><br>
+  <% end %>
+<% end %>

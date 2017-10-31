@@ -1,0 +1,41 @@
+<h1>Bands</h1>
+
+<% @bands.each do |band| %>
+
+  <img class="img-rounded img-thumbnail" width="200" height="200"
+    src="<%= band.image_url %>">
+  <ul class="info_band"><br>
+    <li>
+      <strong> <%= band.name %> </strong>
+    </li>
+    <li>
+      <em> $<%= band.price %> </em>
+    </li>
+  </ul>
+  <p class="review text-justify">
+    <medium> <%= band.review %> </medium>
+  </p>
+
+
+<div class="col-xs-12">
+
+  <%= form_for @reservations, url: reservations_path do |f| %>
+
+    <div class="form-group">
+      <%= f.label :date, class:"date" %><br>
+      <%= f.date_field :date %>
+    </div>
+
+      <%= f.hidden_field :user_id, value: current_user.id  %>
+      <%= f.hidden_field :band_id, value: band.id%>
+
+    <p>
+      <%= f.submit %>
+    </p><br>
+
+  <% end %>
+<% end %>
+
+<% if current_user.admin %>
+  <%= link_to 'bands', new_band_path, class:"admin btn btn-info" %>
+<% end %>

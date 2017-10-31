@@ -1,0 +1,16 @@
+<%= form_for @genre, url: {action: "create"} do |f| %>
+  <p>
+    <%= f.label :name_genre %><br>
+    <%= f.text_field :name_genre %>
+  </p>
+
+  <p>
+    <%= f.label :image_url_genre %><br>
+    <%= f.text_field :image_url_genre %>
+  </p>
+
+  <p>
+    <%= f.submit class:"btn btn-warning"%>
+  </p>
+
+<% end %>

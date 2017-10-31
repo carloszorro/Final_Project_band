@@ -1,0 +1,29 @@
+<%= form_for @band, url: {action: "create"} do |f| %>
+  <p>
+    <%= f.label :name, class:"new_band" %><br>
+    <%= f.text_field :name, class:"new_band_field" %>
+  </p>
+
+  <p>
+    <%= f.label :price, class:"new_band" %><br>
+    <%= f.text_field :price, class:"new_band_field" %>
+  </p>
+
+  <p>
+    <%= f.label :image_url, class:"new_band" %><br>
+    <%= f.text_field :image_url, class:"new_band_field" %>
+  </p>
+
+  <p>
+    <%= f.label :review, class:"new_band" %><br>
+    <%= f.text_field :review, class:"new_band_field" %>
+  </p><br>
+
+  <p class="create_band">
+  <%= f.select "genre_id", options_from_collection_for_select(@genres, "id", "name_genre") %>
+  </p>
+  <p>
+    <%= f.submit class:"create_band"%>
+  </p>
+
+<% end %>

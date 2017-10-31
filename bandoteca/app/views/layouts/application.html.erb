@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bandoteca</title>
-    <%= csrf_meta_tags %>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <%= stylesheet_link_tag "application", media: 'all', 'data-turbolinks-track': 'reload'%>
+  <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
+  <%= csrf_meta_tags %>
+  <title>Document</title>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <body class="text-center">
 
-  <body>
+    <div class="btn-group" role="group" aria-label=".">
+      <%= link_to 'Home', root_path, class:"btn btn-primary"%>
+      <%= link_to 'Reservations', reservations_path, class:"btn btn-primary"%>
+      <%= link_to 'Comments', new_comment_path, class:"btn btn-primary" %>
+    </div>
     <%= yield %>
+    <% if user_signed_in? %>
+    <li class="logout btn btn-info">
+      <%= link_to 'Logout', destroy_user_session_path, class:"logout", method: :delete%>
+    </li>
+    <% end %>
   </body>
+<div class="container">
+</div>
 </html>
