@@ -1,0 +1,36 @@
+<div class="lgv3">
+<h2>
+  The page has <%= pluralize(@comments.count, "comments") %>
+</h2>
+
+<% @comments.each do |comment|%>
+
+<p>
+  <b><%= comment.user.email %></b>
+</p>
+
+<p>
+  <i><%= comment.created_at %></i>
+</p>
+
+<p>
+  <i><%= comment.updated_at %></i>
+</p>
+
+<p><%= comment.comment %></p>
+
+<li class="logout btn btn-info">
+  <%= link_to 'New Comment', new_comment_path %>
+</li>
+
+  <% if current_user.admin %>
+    <li class="logout btn btn-info">
+      <%= link_to 'Delete Comment', comment_path(comment), method: :delete %>
+    </li>
+
+    <li class="logout btn btn-info">
+      <%= link_to 'Edit Comment', edit_comment_path(comment) %>
+    </li>
+  <% end %>
+<% end %>
+</div>

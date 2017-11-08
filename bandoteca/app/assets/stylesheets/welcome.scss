@@ -1,3 +1,70 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.h2 {
+  color: white;
+  margin-top: 50px;
+}
+
+.explanation {
+  font-family: vegur, cursive;
+  font-size: 22px;
+  color: Navy;
+  text-align: justify;
+  padding: 10px;
+}
+
+.lgv {
+  background-image:
+    url(http://www.dovecor.co.za/wp-content/uploads/2015/02/Music-notes.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  margin-top: 34px;
+}
+
+.lgv2 {
+  background-image:
+    url(http://www.powerpointhintergrund.com/uploads/music-notes-background-ppt-15.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  margin-top: 34px;
+}
+
+.lgv3 {
+  background-image:
+    url(http://walldiskpaper.com/wp-content/uploads/2014/10/Life-Is-Music-Wallpaper-Background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  margin-top: 34px;
+}
+
+.log {
+  margin-top: 20px;
+}
+
+.imgs {
+  display: inline-block;
+}
+
+.btnlg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.band {
+
+}

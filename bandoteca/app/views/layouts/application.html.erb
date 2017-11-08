@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <%= stylesheet_link_tag "application", media: 'all', 'data-turbolinks-track': 'reload'%>
   <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
   <%= csrf_meta_tags %>
   <title>Document</title>
 </head>
+<div class="row">
 
   <body class="text-center">
-
-    <div class="btn-group" role="group" aria-label=".">
-      <%= link_to 'Home', root_path, class:"btn btn-primary"%>
-      <%= link_to 'Reservations', reservations_path, class:"btn btn-primary"%>
-      <%= link_to 'Comments', new_comment_path, class:"btn btn-primary" %>
-    </div>
+    <header>
+      <div class="container header col-xs-12">
+        <%= link_to 'Home', root_path, class:"btn btn header"%>
+        <%= link_to 'Reservations', reservations_path, class:"btn btn header"%>
+        <%= link_to 'Comments', comments_path, class:"btn btn header"%>
+      </div>
+    </header>
     <%= yield %>
     <% if user_signed_in? %>
     <li class="logout btn btn-info">
@@ -25,6 +27,5 @@
     </li>
     <% end %>
   </body>
-<div class="container">
 </div>
 </html>
